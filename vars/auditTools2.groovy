@@ -4,7 +4,7 @@ def call(Map config) {
 
     // By default all code within a shared library must be executed within the node block
     node {
-        echo "$(config.message)"
+        echo "${config.message}"
         sh '''
         git version
         java -version
